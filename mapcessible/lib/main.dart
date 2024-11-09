@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => PlaceProvider(),
       child: MaterialApp(
-        title: 'AccessMap',
+        title: 'mapcessible',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -22,4 +22,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-  
