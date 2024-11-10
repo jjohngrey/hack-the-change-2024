@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h2>AccessibleMap</h2>
+      <h2>mapcessible</h2>
     </nav>
   );
 };

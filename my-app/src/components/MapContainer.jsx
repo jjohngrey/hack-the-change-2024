@@ -23,10 +23,9 @@ const MapContainer = () => {
       <div className="map-container">
         <SearchBar />
         <FilterOptions onFilterChange={handleFilterChange} />
-        <GoogleMap mapContainerStyle={mapStyles} zoom={12} center={center}>
-          {/* Sample marker */}
+        {/* <GoogleMap mapContainerStyle={mapStyles} zoom={12} center={center}>
           <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
-        </GoogleMap>
+        </GoogleMap> */}
       </div>
     </LoadScript>
   );
