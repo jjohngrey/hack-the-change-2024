@@ -12,7 +12,6 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final apiKey = dotenv.env['GOOGLE_MAPS_API_KEY'];
 
     return ChangeNotifierProvider(
       create: (_) => PlaceProvider(),

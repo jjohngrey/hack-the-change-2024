@@ -13,7 +13,7 @@ class CustomSearchBar extends StatelessWidget {
       child: TextField(
         controller: _controller,
         decoration: InputDecoration(
-          labelText: 'Search for haw places',
+          labelText: 'Search for accessible places',
           suffixIcon: IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
