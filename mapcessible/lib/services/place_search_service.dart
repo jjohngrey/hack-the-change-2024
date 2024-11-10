@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/place.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class PlaceSearchService {
-  final String apiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
+  final String apiKey = dotenv.env['GOOGLE_MAPS_API_KEY'] ?? 'API_KEY_NOT_FOUND';
 
   Future<List<Place>> searchPlaces(String query) async {
     final url = Uri.parse(
