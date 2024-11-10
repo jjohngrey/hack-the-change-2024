@@ -10,7 +10,7 @@ class SearchPage extends StatelessWidget {
     final placeProvider = Provider.of<PlaceProvider>(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text('AccessMap')),
+      appBar: AppBar(title: Text('mapcessible')),
       body: Column(
         children: [
           CustomSearchBar(onSearch: (query) {

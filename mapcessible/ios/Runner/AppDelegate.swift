@@ -11,8 +11,8 @@ import GoogleMaps                                          // Add this import
     GeneratedPluginRegistrant.register(with: self)
 
     // TODO: Add your Google Maps API key
-    final string apiKey = dotenv.env['GOOGLE_MAPS_API_KEY'] ?? 'API_KEY_NOT_FOUND';
-    GMSServices.provideAPIKey(apiKey)               // Add this line
+    // final string apiKey = dotenv.env['GOOGLE_MAPS_API_KEY'] ?? 'API_KEY_NOT_FOUND';
+    GMSServices.provideAPIKey("")               // Add this line
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
