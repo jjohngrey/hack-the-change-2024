@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CiSearch } from "react-icons/ci";
 import { CiMenuBurger } from "react-icons/ci";
 
-const SearchBar = () => {
+const Searchbar = () => {
   const [query, setQuery] = useState('');
 
   const handleSearch = () => {
@@ -49,4 +49,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default Searchbar;
