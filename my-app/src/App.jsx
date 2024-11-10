@@ -1,30 +1,24 @@
 // App.js
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import MapContainer from './components/MapContainer';
-import Hero from './components/Hero';
 import Login from './pages/Login';
 import Search from './pages/Search';
-import './App.css';
+import { AuthProvider, AuthContext } from './context/AuthContext';
 
-function App() {
-  
+const App = () => {
+  const isAuthenticated = useContext(AuthContext);
+
   return (
-    <div>
-      <Search />
-      {/* <Router>
-      <Routes>
-        <Route path="/" element={<Search />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router> */}
-    </div>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/search" element={isAuthenticated ? <Search /> : <Navigate to="/" />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
-}
+};
 
 export default App;

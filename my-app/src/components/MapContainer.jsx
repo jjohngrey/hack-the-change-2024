@@ -1,12 +1,7 @@
 // components/MapContainer.js
 import React, { useState } from 'react';
-<<<<<<< HEAD
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Searchbar from './Searchbar';
-=======
-import { GoogleMap, LoadScript, Marker, useJsApiLoader } from '@react-google-maps/api';
-import SearchBar from './SearchBar';
->>>>>>> refs/remotes/origin/main
 import FilterOptions from './FilterOptions';
 
 // const MapContainer = () => {
@@ -74,7 +69,6 @@ const Map = () => {
   }
 
   return (
-<<<<<<< HEAD
     <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
       <div className="map-container">
         <Searchbar />
@@ -84,16 +78,6 @@ const Map = () => {
         </GoogleMap> */}
       </div>
     </LoadScript>
-=======
-    <GoogleMap
-      center={userLocation}
-      zoom={12}
-      mapContainerStyle={mapStyles}
-    >
-      {/* Place a marker at the user's location */}
-      <Marker position={userLocation} />
-    </GoogleMap>
->>>>>>> refs/remotes/origin/main
   );
 };
 
